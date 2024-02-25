@@ -10,5 +10,5 @@ Vim with `+job` and `+channel`.
 ## Features
 
 - Run `zk index` automatically.
-- Omnifunc to complete links.
+- Omnifunc to complete links and tags.
   - `let g:zk_enable_omnicompl = 1`.
