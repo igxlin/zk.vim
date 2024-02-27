@@ -4,7 +4,7 @@ endif
 
 if get(g:, 'zk_enable_omnicompl', 0)
     setlocal omnifunc=zk#omnicomplete
-    autocmd CursorHold <buffer> call zk#cache_omnicompl()
+    autocmd BufEnter <buffer> call zk#cache_omnicompl()
 endif
 
-autocmd CursorHold <buffer> call zk#index()
+autocmd BufWritePost <buffer> call zk#index()
